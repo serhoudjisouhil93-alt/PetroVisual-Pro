@@ -90,3 +90,31 @@ with st.expander("📚 Technical Documentation & Petrophysical Logic"):
     """)
     
     st.info("📊 **Algorithm Note:** This tool currently uses a deterministic binary cutoff. Future updates will include Archie's Equation for Water Saturation ($S_w$) modeling.")
+import io
+
+# --- SIDEBAR: DEMO DATA DOWNLOAD ---
+st.sidebar.header("📂 Getting Started")
+
+# Function to convert your demo dataframe to Excel for download
+def get_demo_file():
+    # Creating the same synthetic data we used before
+    demo_data = {
+        'Depth': [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011],
+        'GR': [95, 98, 105, 85, 40, 35, 32, 38, 45, 75, 110, 115],
+        'ILD': [2.5, 2.1, 1.8, 3.5, 120.0, 145.0, 138.0, 115.0, 15.0, 5.0, 1.5, 1.2]
+    }
+    df_demo = pd.DataFrame(demo_data)
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine='openpyxl') as writer:
+        df_demo.to_excel(writer, index=False)
+    return output.getvalue()
+
+st.sidebar.download_button(
+    label="📥 Download Demo Excel File",
+    data=get_demo_file(),
+    file_name="PetroStream_Demo_Data.xlsx",
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    help="Download this file and upload it below to see the app's full potential!"
+)
+
+st.sidebar.markdown("---")
