@@ -118,3 +118,19 @@ st.sidebar.download_button(
 )
 
 st.sidebar.markdown("---")
+# --- ABOUT THE AUTHOR ---
+st.sidebar.markdown("---")
+st.sidebar.title("👨‍💻 About the Author")
+st.sidebar.info("""
+**[Your Full Name]**
+*Geology & Digital Energy Enthusiast*
+
+Building tools to bridge the gap between traditional Geosciences and Data Science.
+
+🔗 **[LinkedIn Profile](YOUR_LINKEDIN_URL_HERE)**
+🐙 **[GitHub Portfolio](YOUR_GITHUB_URL_HERE)**
+""")
+
+# Adding a 'Buy Me a Coffee' or 'Contact' vibe
+if st.sidebar.button("📩 Contact for Collaboration"):
+    st.sidebar.write("Feel free to reach out on LinkedIn for project inquiries or feedback!")
