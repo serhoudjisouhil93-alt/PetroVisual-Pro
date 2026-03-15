@@ -127,8 +127,8 @@ st.sidebar.info("""
 
 Building tools to bridge the gap between traditional Geosciences and Data Science.
 
-🔗 **[LinkedIn Profile](YOUR_LINKEDIN_URL_HERE)**
-🐙 **[GitHub Portfolio](YOUR_GITHUB_URL_HERE)**
+🔗 **[SERHOUDJI Souhil Abderrahim](https://www.linkedin.com/in/serhoudji-souhil-abderrhaim-480979399)**
+🐙 **[SERHOUDJI Souhil Abderrahim](https://github.com/serhoudjisouhil93-alt)**
 """)
 
 # Adding a 'Buy Me a Coffee' or 'Contact' vibe
