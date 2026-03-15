@@ -21,4 +21,4 @@ PetroVisual Pro is a high-performance web application designed for geoscientists
 4. Download your results!
 
 ---
-*Developed by [Your Name] - Dedicated to the Digital Transformation of Geosciences.*
+*Developed by SERHOUDJI Souhil Abderrahim - Dedicated to the Digital Transformation of Geosciences.*
