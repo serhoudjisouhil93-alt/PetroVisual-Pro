@@ -72,3 +72,21 @@ if uploaded_file:
 
 else:
     st.warning("Please upload a file to begin the analysis.")
+
+# --- TECHNICAL INTELLIGENCE SECTION ---
+with st.expander("📚 Technical Documentation & Petrophysical Logic"):
+    st.markdown("""
+    ### How PetroStream Ultra Detects Hydrocarbons
+    This application utilizes a dual-track crossover logic to identify potential Net Pay zones:
+    
+    1. **Lithology Identification ($V_{sh}$):** We use the Gamma Ray index ($I_{GR}$) to distinguish between reservoir-quality sand and non-reservoir shale.
+       $$I_{GR} = \frac{GR_{log} - GR_{min}}{GR_{max} - GR_{min}}$$
+       *Zones below the user-defined **GR Cutoff** are classified as Sand.*
+
+    2. **Fluid Discrimination (Resistivity):** Because hydrocarbons (Oil/Gas) are non-conductive, they increase the formation resistivity ($R_t$). 
+       *If a Sand zone ($I_{GR} < Cutoff$) also displays high resistivity ($R_t > Cutoff$), it is flagged as a **Net Pay Zone**.*
+
+    3. **The "Water Leg" Detection:** A unique feature of this tool is identifying "Wet Sands." If the app detects Sand but the Resistivity is low, it remains **Yellow**—indicating a potential water-bearing reservoir.
+    """)
+    
+    st.info("📊 **Algorithm Note:** This tool currently uses a deterministic binary cutoff. Future updates will include Archie's Equation for Water Saturation ($S_w$) modeling.")
