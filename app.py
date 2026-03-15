@@ -122,13 +122,13 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("---")
 st.sidebar.title("👨‍💻 About the Author")
 st.sidebar.info("""
-**[Your Full Name]**
+**[SERHOUDJI Souhil Abderrahim]**
 *Geology & Digital Energy Enthusiast*
 
 Building tools to bridge the gap between traditional Geosciences and Data Science.
 
-🔗 **[SERHOUDJI Souhil Abderrahim](https://www.linkedin.com/in/serhoudji-souhil-abderrhaim-480979399)**
-🐙 **[SERHOUDJI Souhil Abderrahim](https://github.com/serhoudjisouhil93-alt)**
+🔗 **[Linkedin Profile](https://www.linkedin.com/in/serhoudji-souhil-abderrhaim-480979399)**
+🐙 **[Github Portfolio](https://github.com/serhoudjisouhil93-alt)**
 """)
 
 # Adding a 'Buy Me a Coffee' or 'Contact' vibe
